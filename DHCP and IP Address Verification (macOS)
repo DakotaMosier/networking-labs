@@ -1,0 +1,55 @@
+
+# Lab 2: DHCP and IP Address Verification (macOS)
+
+## Objective
+
+The objective of this lab was to verify DHCP functionality and identify the IPv4 address assigned to my device using macOS terminal commands.
+
+This demonstrates basic network troubleshooting skills required in a Help Desk role.
+
+---
+
+## Tools Used
+
+- macOS Terminal
+- ifconfig command
+- ipconfig command
+
+---
+
+## Commands Executed
+
+### Check network interface configuration
+
+```bash
+
+ifconfig en0
+
+Output
+
+inet 192.168.1.134 netmask 0xffffff00 broadcast 192.168.1.255
+
+Analysis
+
+• The presence of an IPv4 address (192.168.1.134) confirms DHCP successfully assigned an IP address.
+
+• This indicates proper communication between the client machine and DHCP server (router).
+
+• The network interface status was "active," confirming Layer 1 and Layer 2 connectivity.
+
+
+This lab taught me how to:
+
+  Identify IPv4 vs IPv6 addresses
+
+  Verify DHCP functionality
+
+  Use terminal commands to troubleshoot network connectivity
+
+  Confirm network interface status
+
+Real-World Help Desk Application
+
+  If a user cannot connect to the network, checking for a valid IPv4 address helps determine whether DHCP is functioning properly.
+
+  If the system shows a 169.254.x.x address, it indicates DHCP failure.
